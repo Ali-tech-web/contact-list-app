@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        <link rel = "stylesheet" href = "css/style.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+<body> 
+
+    <h1>Contact List Application </h1>
+    <div class = "cms-table-container">
+
+        <input id="searchField" type="text" placeholder="Search.." class="search-input">
+        <div class = "cms-table-row">
+            <div class = "cms-table-column cms-name cms-header">Name</div>
+            <div class = "cms-table-column cms-phone cms-header">Phone</div>
+            <div class = "cms-table-column cms-address cms-header">Address</div>
+            <div class = "cms-table-column cms-add-entry-column cms-header" id = "cmsAddNewEntry">+</div>
+        </div>
+        <ul id = "myContactList" ></ul>
+    </div>
+
+    <div class = "disable-modal" id = "backdrop"></div>
+    <div class = "disable-modal" id = "newPersonModal">
+        <h1>Add New Person</h1>
+        <label for = "newPersonName">Name: </label>
+        <input type = "text" id = "newPersonName">
+
+        <label for = "newPersonPhone">Phone: </label>
+        <input type = "text" id = "newPersonPhone">
+
+        <label for = "newPersonAddress">Address: </label>
+        <input type = "text" id = "newPersonAddress">
+        
+        <button id = "newPersonCancelBtn">Cancel</button>
+        <button id = "newPersonSubmitBtn">Submit</button>
+        <button id = "newPersonUpdateBtn" class="disable-update-btn" style="float:left">Update</button>
+
+    </div>
+
+    <button id="clearBtn" style="position: absolute; right: 0px; bottom: 0px">Clear All </button>
+
+        <script src="js/app.js">
+        </script>
+</body>
+</html>
